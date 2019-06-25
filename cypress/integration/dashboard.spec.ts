@@ -1,15 +1,15 @@
 describe('Initial page', () => {
 
   beforeEach(() => {
-    
+
 
   })
 
   it(`has title 'Tour of Heroes'`, () => {
-    
+
     // basic tests
     cy.visit('/')
-    cy.title().should('eq', 'Tour of Heroes')
+    cy.title().should('eq', 'Tour of Heroes2')
 
 
 
@@ -69,7 +69,7 @@ describe('Initial page', () => {
 
 
 
-    
+
 
 
 
@@ -81,5 +81,5 @@ describe('Initial page', () => {
     cy.get('#search-box').type('Mr. Nice');
       cy.get('.search-result li').contains('Mr. Nice')
   });
-  
+
 });
